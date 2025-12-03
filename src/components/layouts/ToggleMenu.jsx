@@ -1,11 +1,10 @@
 import { toggleSidebar } from "@/store/slices/toggleMenuSlice";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import LinkItem from "../common/LinkItem";
 import { useEffect, useRef } from "react";
 import { useClickOutside } from "@/hooks/use-click-outside";
-import { CgMenuGridO } from "react-icons/cg";
 import logo from "@/assets/images/logo.svg";
+import { RiMenu2Fill, RiMenu3Fill } from "react-icons/ri";
 
 const ToggleMenu = ({ links }) => {
   const { isOpen } = useSelector((state) => state.sidebar);
@@ -33,10 +32,10 @@ const ToggleMenu = ({ links }) => {
   return (
     <div className="lg:hidden">
       <div ref={menuButtonRef}>
-        <CgMenuGridO
+        <RiMenu2Fill
           onClick={() => dispatch(toggleSidebar())}
           className="cursor-pointer"
-          size={35}
+          size={24}
         />
       </div>
 
@@ -53,9 +52,13 @@ const ToggleMenu = ({ links }) => {
       >
         {/* Close Button */}
         <div className="py-3 flex justify-between items-center">
-          <img src={logo} alt="logo" />
-          <HiMenuAlt3
-            size={26}
+          <img
+            src={logo}
+            alt="logo"
+            className="w-20"
+          />
+          <RiMenu3Fill
+            size={24}
             className="cursor-pointer"
             onClick={() => dispatch(toggleSidebar())}
           />

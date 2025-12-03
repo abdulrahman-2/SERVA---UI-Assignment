@@ -8,12 +8,12 @@ import { menu } from "@/constant";
 const Header = () => {
   return (
     <header className="z-10 flex h-[60px] items-center justify-between bg-white dark:bg-black px-4 transition-colors border-b border-border">
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-4">
         <ToggleMenu links={menu} />
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="w-20 sm:w-auto" />
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-1 md:gap-3">
         <button className="relative btn-ghost size-10 flex items-center justify-center">
           <IoNotificationsOutline size={20} />
 

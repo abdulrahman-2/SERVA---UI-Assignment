@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "RadialTrial";
-  src: url("/src/assets/font/radialtrial-regular.otf") format("opentype");
+  src: url("/src/assets/fonts/radial-trial/radialtrial-regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "RadialTrial";
-  src: url("/src/assets/font/radialtrial-semibold.otf") format("opentype");
+  src: url("/src/assets/fonts/radial-trial/radialtrial-semibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "RadialTrial";
-  src: url("/src/assets/font/radialtrial-bold.otf") format("opentype");
+  src: url("/src/assets/fonts/radial-trial/radialtrial-bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: "RadialTrial";
-  src: url("/src/assets/font/radialtrial-heavy.otf") format("opentype");
+  src: url("/src/assets/fonts/radial-trial/radialtrial-heavy.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -35,15 +35,28 @@
 
 @font-face {
   font-family: "RadialTrial";
-  src: url("/src/assets/font/radialtrial-black.otf") format("opentype");
+  src: url("/src/assets/fonts/radial-trial/radialtrial-black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BoutrosAds";
+  src: url("/src/assets/fonts/boutros-ads/ArbFONTS-Boutros-Medium.ttf")
+    format("opentype");
+  font-weight: 500;
+  font-style: medium;
   font-display: swap;
 }
 
 body {
   font-family: "RadialTrial", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+}
+
+.font-boutros {
+  font-family: "BoutrosAds", sans-serif;
 }
 
 @theme {

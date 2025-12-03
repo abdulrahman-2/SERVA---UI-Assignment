@@ -28,7 +28,7 @@ const SalesChart = () => {
     <div className="w-full my-[30px] overflow-x-auto">
       <div className="min-w-[640px] h-72">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} barGap={4} barCategoryGap="20%">
+          <BarChart data={data} barGap={4} barCategoryGap="20%" >
             <YAxis
               domain={[20000, 160000]}
               ticks={[

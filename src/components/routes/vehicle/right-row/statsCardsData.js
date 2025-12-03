@@ -10,6 +10,7 @@ export const statsData = [
     value: "202,230",
     color: "text-black",
     bgColor: "bg-secondary",
+    money: true,
   },
   {
     icon: banknoteUp,
@@ -17,6 +18,7 @@ export const statsData = [
     value: "202,230",
     color: "text-black",
     bgColor: "bg-secondary",
+    money: true,
   },
   {
     icon: fileCheck,
@@ -24,6 +26,7 @@ export const statsData = [
     value: "2,230",
     color: "text-black",
     bgColor: "bg-secondary",
+    money: false,
   },
   {
     icon: map,
@@ -31,5 +34,6 @@ export const statsData = [
     value: "2,230",
     color: "text-black",
     bgColor: "bg-secondary",
+    money: false,
   },
 ];

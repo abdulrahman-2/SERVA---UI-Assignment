@@ -17,7 +17,7 @@ const FiscalYearSelect = () => {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="cursor-pointer inline-flex items-center justify-between w-full gap-3 px-4 py-2 bg-white rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+        className="cursor-pointer inline-flex items-center justify-between w-full gap-3 py-2 bg-white rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
       >
         <span>{selectedYear}</span>
         <MdOutlineKeyboardArrowDown

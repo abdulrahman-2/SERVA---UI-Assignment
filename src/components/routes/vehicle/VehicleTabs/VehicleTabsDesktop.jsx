@@ -12,7 +12,7 @@ const VehicleTabsDesktop = ({ tabs, activeTab, onChange }) => {
               ${
                 activeTab === tab.id
                   ? "font-semibold"
-                  : "text-gray-600 hover:text-gray-900"
+                  : "text-[#21272A] hover:text-gray-900"
               }
             `}
           >

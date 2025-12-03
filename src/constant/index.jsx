@@ -11,8 +11,8 @@ const menu = [
   { name: "Users", link: "/users", icon: <Icon name="users" /> },
   { name: "Waypoints", link: "/waypoints", icon: <Icon name="waypoints" /> },
   { name: "Contact", link: "/contact", icon: <Icon name="contact" /> },
-  { name: "Logout", link: "/logout", icon: <Icon name="logout" /> },
-  { name: "Bolt", link: "/bolt", icon: <Icon name="bolt" /> },
+  { name: "Transactions", link: "/transactions", icon: <Icon name="logout" /> },
+  { name: "Settings", link: "/settings", icon: <Icon name="bolt" /> },
 ];
 
 export { menu };
