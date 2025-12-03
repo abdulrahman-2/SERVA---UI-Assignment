@@ -1,0 +1,69 @@
+@config "../tailwind.config.mjs";
+@import "tailwindcss";
+
+@font-face {
+  font-family: "RadialTrial";
+  src: url("/src/assets/font/radialtrial-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RadialTrial";
+  src: url("/src/assets/font/radialtrial-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RadialTrial";
+  src: url("/src/assets/font/radialtrial-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RadialTrial";
+  src: url("/src/assets/font/radialtrial-heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RadialTrial";
+  src: url("/src/assets/font/radialtrial-black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "RadialTrial", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #f5f3eb;
+  --color-green: #6bc838;
+  --color-title: #565656;
+  --color-border: #f5f3eb;
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-white/10 transition duration-300;
+  }
+
+  .btn-ghost {
+    @apply flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg p-2 duration-200 transition-colors hover:bg-[#f5f3eb] hover:text-black;
+  }
+
+  .hover {
+    @apply transition-colors hover:bg-[#f5f3eb];
+  }
+}
