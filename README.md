@@ -34,37 +34,51 @@ This project is a frontend implementation of the **Vehicle Details Page** from t
 
 ## Project Structure
 
-├── node_modules/          (standard dependency folder, not expanded)
-├── public/
-│   └── vite.svg           (icon file)
-├── src/
-│   ├── assets/            (folder for static assets, not expanded)
-│   ├── components/
-│   │   ├── common/
-│   │   │   └── icons/     (subfolder for icon components, not expanded)
-│   │   ├── layouts/
-│   │   │   └── vehicle/   (subfolder for vehicle-specific layouts, not expanded)
-│   │   ├── routes/
-│   │   │   └── vehicle/
-│   │   │       ├── left-row/      (subfolder)
-│   │   │       ├── right-row/     (subfolder)
-│   │   │       └── VehicleTabs/
-│   │   │           └── page.jsx   (file: likely a React component for tabs)
-│   │   └── constant/     (folder for constants, not expanded)
-│   ├── hooks/            (folder for custom React hooks, not expanded)
-│   ├── store/            (folder for state management, e.g., Redux, not expanded)
-│   ├── utils/
-│   │   └── utils.jsx     (utility functions file)
-│   ├── App.jsx           (main app component)
-│   ├── App.css           (app styles)
-│   └── main.jsx          (entry point)
-├── .gitignore            (Git ignore file)
-├── index.html            (HTML template)
-├── package-lock.json     (dependency lockfile)
-├── package.json          (project manifest)
-├── README.md             (project documentation)
-├── tailwind.config.js    (Tailwind CSS configuration)
-└── vite.config.js        (Vite build tool configuration)
+src/ – Main source code
+
+assets/ – Static assets (images, icons)
+
+components/ – Reusable components
+
+common/icons/ – Icon components
+
+layouts/vehicle/ – Vehicle-specific layout components
+
+routes/vehicle/ – Vehicle page structure
+
+left-row/ – Left column components
+
+right-row/ – Right column components
+
+VehicleTabs/page.jsx – Tab component
+
+constant/ – App constants
+
+hooks/ – Custom React hooks
+
+store/ – Redux state management
+
+utils/utils.jsx – Utility functions
+
+App.jsx – Main app component
+
+main.jsx – Entry point
+
+public/ – Public assets (vite.svg)
+
+Config & metadata:
+
+package.json / package-lock.json – Dependencies
+
+tailwind.config.js – Tailwind CSS setup
+
+vite.config.js – Vite configuration
+
+.gitignore – Ignored files
+
+index.html – HTML template
+
+README.md – Project documentation
 
 **Notes on decisions:**
 - **Styling:** Tailwind CSS for fast prototyping and responsive design.  
