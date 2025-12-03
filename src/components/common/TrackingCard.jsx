@@ -1,4 +1,4 @@
-import driver from "@/assets/images/driver.svg";
+import driver from "@/assets/images/Driver.svg";
 
 const TrackingCard = ({
   chassisNumber = "JTMBFREV4JJ752103",
